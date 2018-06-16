@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="/style.css"><title>Jonáš Karásek
+| Music Videos</title></head><body><header><a id="logo-link" href="/"><img src="/assets/logo.jpg" id="logo" alt="Jonas Karasek"></a><nav><a href="/films">Films</a><a href="/commercials">Commercials</a><a class="active">Music Videos &amp; So On</a><a href="/post-pro">Post Pro</a><a href="/art-direction-and-design">Art Direction &amp; Design</a><a href="/about">About</a></nav></header><main><ul class="gallery clearfix"><li style="width:299px;height:126px"><a href="https://vimeo.com/215908648" data-id="215908648"><img src="sladovna.png" alt="Sladovňa" title="Sladovňa" style="width:300px;height:127px"/></a></li><li style="width:299px;height:126px"><a href="https://vimeo.com/213530638" data-id="213530638"><img src="satky.png" alt="Šatky" title="Šatky" style="width:300px;height:127px"/></a></li><li style="width:299px;height:126px"><a href="https://vimeo.com/256653254" data-id="256653254"><img src="commercial-1.png" alt="Tip Sport" title="Tip Sport" style="width:300px;height:127px"/></a></li><li style="width:299px;height:126px"><a href="https://vimeo.com/249197078" data-id="249197078"><img src="commercial-2.png" alt="Tchibo" title="Tchibo" style="width:300px;height:127px"/></a></li><li style="width:299px;height:126px"><a href="https://vimeo.com/206138260" data-id="206138260"><img src="commercial-11.png" alt="Probia" title="Probia" style="width:300px;height:127px"/></a></li></ul></main><script src="/vendor/bigpicture/BigPicture.js"></script><script src="/vendor/jquery/jquery.js"></script><script>$(document).ready(function () {
+  $('.gallery a').on('click', function (e) {
+    e.preventDefault()
+    BigPicture({
+      el: this,
+      vimeoSrc: $(this).data('id'),
+    })
+  })
+})
+</script></body></html>

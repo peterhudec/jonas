@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="/style.css"><title>Jonáš Karásek
+| Films</title></head><body><header><a id="logo-link" href="/"><img src="/assets/logo.jpg" id="logo" alt="Jonas Karasek"></a><nav><a class="active">Films</a><a href="/commercials">Commercials</a><a href="/music-videos">Music Videos &amp; So On</a><a href="/post-pro">Post Pro</a><a href="/art-direction-and-design">Art Direction &amp; Design</a><a href="/about">About</a></nav></header><main><ul class="gallery clearfix"><li style="width:449px;height:653px"><a href="https://vimeo.com/238178924" data-id="238178924" caption="Lorem ipsum dolor sit amet"><img src="game.jpg" alt="Game" title="Game" style="width:450px;height:654px"/></a></li><li style="width:449px;height:653px"><a href="https://vimeo.com/213768677" data-id="213768677"><img src="uprising.jpg" alt="My Uprising" title="My Uprising" style="width:450px;height:654px"/></a></li><li style="width:449px;height:653px"><a href="https://vimeo.com/223992227" data-id="223992227"><img src="swan.jpg" alt="Swan" title="Swan" style="width:450px;height:654px"/></a></li><li style="width:449px;height:653px"><a href="https://vimeo.com/213768498" data-id="213768498"><img src="candidate.jpg" alt="Candidate" title="Candidate" style="width:450px;height:654px"/></a></li></ul></main><script src="/vendor/bigpicture/BigPicture.js"></script><script src="/vendor/jquery/jquery.js"></script><script>$(document).ready(function () {
+  $('.gallery a').on('click', function (e) {
+    e.preventDefault()
+    BigPicture({
+      el: this,
+      vimeoSrc: $(this).data('id'),
+    })
+  })
+})
+</script></body></html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="/style.css"><title>Jonáš Karásek
+| About</title></head><body><header><a id="logo-link" href="/"><img src="/assets/logo.jpg" id="logo" alt="Jonas Karasek"></a><nav><a href="/films">Films</a><a href="/commercials">Commercials</a><a href="/music-videos">Music Videos &amp; So On</a><a href="/post-pro">Post Pro</a><a href="/art-direction-and-design">Art Direction &amp; Design</a><a class="active">About</a></nav></header><main><h2>About</h2></main><script src="/vendor/bigpicture/BigPicture.js"></script><script src="/vendor/jquery/jquery.js"></script><script>$(document).ready(function () {
+  $('.gallery a').on('click', function (e) {
+    e.preventDefault()
+    BigPicture({
+      el: this,
+      vimeoSrc: $(this).data('id'),
+    })
+  })
+})
+</script></body></html>
